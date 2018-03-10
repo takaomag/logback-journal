@@ -8,15 +8,18 @@ licenses += ("The Apache Software License, Version 2.0" -> url("http://www.apach
 
 homepage := Some(url("https://github.com/gnieh/logback-journal"))
 
+retrieveManaged := true
+
 javaOptions += "-Djna.nosys=true"
 
-libraryDependencies += "net.java.dev.jna" % "jna" % "4.4.0"
+libraryDependencies += "net.java.dev.jna" % "jna" % "4.5.1"
 
 libraryDependencies += "ch.qos.logback"  % "logback-classic" % "1.2.3"
 
 libraryDependencies += "com.novocode" % "junit-interface" % "0.11" % "test"
 
 // OSGi settings
+enablePlugins(SbtOsgi)
 osgiSettings
 
 resourceDirectories in Compile := List()
