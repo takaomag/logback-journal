@@ -12,7 +12,7 @@ retrieveManaged := true
 
 javaOptions += "-Djna.nosys=true"
 
-libraryDependencies += "net.java.dev.jna" % "jna" % "4.5.1"
+libraryDependencies += "net.java.dev.jna" % "jna" % "4.5.2"
 
 libraryDependencies += "ch.qos.logback"  % "logback-classic" % "1.2.3"
 
